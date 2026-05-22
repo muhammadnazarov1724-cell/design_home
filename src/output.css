@@ -12,6 +12,8 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
@@ -182,6 +184,9 @@
   .my-\[20px\] {
     margin-block: 20px;
   }
+  .my-\[30px\] {
+    margin-block: 30px;
+  }
   .my-\[50px\] {
     margin-block: 50px;
   }
@@ -214,6 +219,9 @@
   }
   .h-\[680px\] {
     height: 680px;
+  }
+  .h-auto {
+    height: auto;
   }
   .w-\[165\] {
     width: 165;
@@ -293,6 +301,9 @@
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
+  .rounded-\[5px\] {
+    border-radius: 5px;
+  }
   .rounded-\[8px\] {
     border-radius: 8px;
   }
@@ -345,6 +356,12 @@
   .py-\[15px\] {
     padding-block: 15px;
   }
+  .py-\[30pc\] {
+    padding-block: 30pc;
+  }
+  .py-\[30px\] {
+    padding-block: 30px;
+  }
   .py-\[300px\] {
     padding-block: 300px;
   }
@@ -379,6 +396,14 @@
   .text-\[30px\] {
     font-size: 30px;
   }
+  .font-\[1\] {
+    --tw-font-weight: 1;
+    font-weight: 1;
+  }
+  .font-\[400\] {
+    --tw-font-weight: 400;
+    font-weight: 400;
+  }
   .font-\[550\] {
     --tw-font-weight: 550;
     font-weight: 550;
@@ -391,8 +416,17 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[\#0C1623\] {
+    color: #0C1623;
+  }
+  .text-\[\#1D263AE5\] {
+    color: #1D263AE5;
+  }
   .text-\[\#24AB70\] {
     color: #24AB70;
+  }
+  .text-\[\#101C26CC\] {
+    color: #101C26CC;
   }
   .text-\[\#222222\] {
     color: #222222;
@@ -458,9 +492,19 @@
       width: 45%;
     }
   }
+  .lg\:w-\[50\%\] {
+    @media (width >= 64rem) {
+      width: 50%;
+    }
+  }
   .lg\:w-\[60\%\] {
     @media (width >= 64rem) {
       width: 60%;
+    }
+  }
+  .lg\:w-\[70\%\] {
+    @media (width >= 64rem) {
+      width: 70%;
     }
   }
   .lg\:w-\[180px\] {
@@ -503,6 +547,11 @@
       gap: 25px;
     }
   }
+  .lg\:gap-\[50px\] {
+    @media (width >= 64rem) {
+      gap: 50px;
+    }
+  }
   .lg\:gap-\[100px\] {
     @media (width >= 64rem) {
       gap: 100px;
@@ -542,6 +591,12 @@
     @media (width >= 64rem) {
       font-size: var(--text-4xl);
       line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .lg\:text-5xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
   .lg\:text-\[16px\] {
